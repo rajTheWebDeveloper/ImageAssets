@@ -2,6 +2,7 @@ import express from 'express'
 import portfolio from '../controllers/portfolio.js'
 import multer from 'multer';
 import shortid from 'shortid';
+import getto from '../controllers/getto.js';
 
 let router=express.Router()
 
@@ -20,6 +21,7 @@ const upload = multer({ storage: storage });
 
 
 router.post("/upload", upload.single('image'),portfolio);
+router.get('/gimme',getto)
 
 
 export default router
