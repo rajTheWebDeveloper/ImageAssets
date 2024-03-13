@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev":"nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,6 @@
     "shortid": "^2.2.16"
   },
   "engines": {
-    "node":"18.x"
+    "node": "18.x"
   }
 }
