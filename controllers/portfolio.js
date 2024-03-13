@@ -11,7 +11,7 @@ let portfolio=async (req,res)=>
     let {projectName,url}=req.body
     let image=req.file
     let createdProject=await Portfolio.create({
-        projectName,url,image:baseUrl+'/public/'+image.filename
+        projectName,url,image:baseUrl+'public/'+image.filename
     })
     return res.send(createdProject)
 }
